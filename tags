@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AVAILABLE	seats.h	/^    AVAILABLE, $/;"	e	enum:__anon2
+BUFSIZE	http_server.c	18;"	d	file:
+BUFSIZE	util.c	17;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall -O2 -D HAVE_CONFIG_H$/;"	m
+COMPRESS	Makefile	/^COMPRESS = gzip$/;"	m
+CP	Makefile	/^CP = cp$/;"	m
+DELIVERY	Makefile	/^DELIVERY = Makefile *.h *.c aquajet_full.png selectSeats.html reserveSeat.html$/;"	m
+FILENAMESIZE	http_server.c	19;"	d	file:
+HANDIN	Makefile	/^	HANDIN=`pwd`\/${TEAM}-${VERSION}-${PROJ}.tar.gz;\\$/;"	m
+MAX_THREADS	thread_pool.c	17;"	d	file:
+MKDIR	Makefile	/^MKDIR = mkdir$/;"	m
+MV	Makefile	/^MV = mv$/;"	m
+OBJS	Makefile	/^OBJS = ${SRCS:.c=.o}$/;"	m
+OCCUPIED	seats.h	/^    OCCUPIED$/;"	e	enum:__anon2
+PENDING	seats.h	/^    PENDING, $/;"	e	enum:__anon2
+PROGS	Makefile	/^PROGS = http_server$/;"	m
+PROJ	Makefile	/^PROJ = http_server$/;"	m
+RM	Makefile	/^RM = rm$/;"	m
+SRCS	Makefile	/^SRCS = http_server.c thread_pool.c util.c seats.c semaphore.c$/;"	m
+STANDBY_SIZE	thread_pool.c	18;"	d	file:
+TAR	Makefile	/^TAR = tar cvf$/;"	m
+TEAM	Makefile	/^TEAM = `whoami`$/;"	m
+VERSION	Makefile	/^VERSION = `date +%Y%m%d%H%M%S`$/;"	m
+_SEAT_OPERATIONS_H_	seats.h	2;"	d
+_THREADPOOL_H_	thread_pool.h	2;"	d
+_UTIL_H_	util.h	2;"	d
+analyze_trace	testsuite/http_test.py	/^def analyze_trace():$/;"	f
+argument	thread_pool.c	/^    void *argument;$/;"	m	struct:__anon1	file:
+attr	thread_pool.c	/^pthread_attr_t attr; $/;"	v
+cancel	reserveSeat.html	/^      function cancel() {$/;"	f
+cancel	seats.c	/^void cancel(char* buf, int bufsize, int seat_id, int customer_id, int customer_priority)$/;"	f
+cleanUp	testsuite/run_testcase.sh	/^function cleanUp()$/;"	f
+confirm	reserveSeat.html	/^      function confirm() {$/;"	f
+confirm_seat	seats.c	/^void confirm_seat(char* buf, int bufsize, int seat_id, int customer_id, int customer_priority)$/;"	f
+customer_id	seats.h	/^    int customer_id;$/;"	m	struct:seat_struct
+failures	testsuite/http_test.py	/^failures = Queue()$/;"	v
+fetch_lock	thread_pool.c	/^  pthread_mutex_t fetch_lock;$/;"	m	struct:pool_t	file:
+function	thread_pool.c	/^    void (*function)(void *);$/;"	m	struct:__anon1	file:
+getParameterByName	reserveSeat.html	/^      function getParameterByName(name) {$/;"	f
+getParameterByName	selectSeats.html	/^          function getParameterByName(name) {$/;"	f
+get_line	util.c	/^int get_line(int fd, char *buf, int size)$/;"	f
+goAhead	thread_pool.c	/^  int goAhead;$/;"	m	struct:pool_t	file:
+goAhead_lock	thread_pool.c	/^  pthread_mutex_t goAhead_lock;$/;"	m	struct:pool_t	file:
+handle_connection	util.c	/^void handle_connection(int* connfd_ptr)$/;"	f
+host	testsuite/http_test.py	/^    host = sys.argv[1]$/;"	v
+http_request	testsuite/http_test.py	/^def http_request(host, port, obj, sleeptime=0.0, method='GET', **kwargs):$/;"	f
+id	seats.h	/^    int id;$/;"	m	struct:seat_struct
+list_seats	seats.c	/^void list_seats(char* buf, int bufsize)$/;"	f
+listenfd	http_server.c	/^int listenfd;$/;"	v
+load_seats	seats.c	/^void load_seats(int number_of_seats)$/;"	f
+m_sem_t	semaphore.c	/^typedef struct m_sem_t {$/;"	s	file:
+m_sem_t	semaphore.c	/^} m_sem_t;$/;"	t	typeref:struct:m_sem_t	file:
+main	http_server.c	/^int main(int argc,char *argv[])$/;"	f
+next	seats.h	/^    struct seat_struct* next;$/;"	m	struct:seat_struct	typeref:struct:seat_struct::seat_struct
+next	thread_pool.c	/^    void *next;$/;"	m	struct:__anon1	file:
+notify	thread_pool.c	/^  pthread_cond_t notify;$/;"	m	struct:pool_t	file:
+parse_int_arg	util.c	/^int parse_int_arg(char* filename, char* arg)$/;"	f
+parse_trace	testsuite/http_test.py	/^def parse_trace(tracefile='1.trace'):$/;"	f
+pool_add_task	thread_pool.c	/^int pool_add_task(pool_t *pool, void (*function)(void *), void *argument)$/;"	f
+pool_create	thread_pool.c	/^pool_t *pool_create(int queue_size, int num_threads)$/;"	f
+pool_destroy	thread_pool.c	/^int pool_destroy(pool_t *pool)$/;"	f
+pool_t	thread_pool.c	/^struct pool_t {$/;"	s	file:
+pool_t	thread_pool.h	/^typedef struct pool_t pool_t;$/;"	t	typeref:struct:pool_t
+pool_task_t	thread_pool.c	/^} pool_task_t;$/;"	t	typeref:struct:__anon1	file:
+port	testsuite/http_test.py	/^    port = sys.argv[2]$/;"	v
+queue_head	thread_pool.c	/^  pool_task_t *queue_head;$/;"	m	struct:pool_t	file:
+queue_lock	thread_pool.c	/^  pthread_mutex_t queue_lock;$/;"	m	struct:pool_t	file:
+queue_tail	thread_pool.c	/^  pool_task_t *queue_tail;$/;"	m	struct:pool_t	file:
+readnbytes	util.c	/^int readnbytes(int fd,char *buf,int size)$/;"	f
+reserveSeat	selectSeats.html	/^          function reserveSeat(seatNum) {$/;"	f
+run_correctness_trace	testsuite/http_test.py	/^def run_correctness_trace(config, trace, host, port, _id=0):$/;"	f
+run_performance_trace	testsuite/http_test.py	/^def run_performance_trace(config, trace, host, port, _id=0):$/;"	f
+run_trace	testsuite/http_test.py	/^def run_trace(config, traces, host, port):$/;"	f
+seat_header	seats.c	/^seat_t* seat_header = NULL;$/;"	v
+seat_state_t	seats.h	/^} seat_state_t;$/;"	t	typeref:enum:__anon2
+seat_state_to_char	seats.c	/^char seat_state_to_char(seat_state_t state)$/;"	f
+seat_struct	seats.h	/^typedef struct seat_struct$/;"	s
+seat_t	seats.h	/^} seat_t;$/;"	t	typeref:struct:seat_struct
+sem_post	semaphore.c	/^int sem_post(m_sem_t *s)$/;"	f
+sem_wait	semaphore.c	/^int sem_wait(m_sem_t *s)$/;"	f
+shutdown_server	http_server.c	/^void shutdown_server(int signo){$/;"	f
+state	seats.h	/^    seat_state_t state;$/;"	m	struct:seat_struct
+successes	testsuite/http_test.py	/^successes = Queue()$/;"	v
+task_queue_size_limit	thread_pool.c	/^  int task_queue_size_limit;$/;"	m	struct:pool_t	file:
+task_queue_temp_size	thread_pool.c	/^  int task_queue_temp_size; \/\/current size of queue$/;"	m	struct:pool_t	file:
+thread_count	thread_pool.c	/^  int thread_count;$/;"	m	struct:pool_t	file:
+thread_do_work	thread_pool.c	/^static void *thread_do_work(void *pool)$/;"	f	file:
+threadpool	http_server.c	/^pool_t* threadpool;$/;"	v
+threads	thread_pool.c	/^  pthread_t *threads;$/;"	m	struct:pool_t	file:
+tracefile	testsuite/http_test.py	/^    tracefile = sys.argv[3]$/;"	v
+unload_seats	seats.c	/^void unload_seats()$/;"	f
+value	semaphore.c	/^    int value;$/;"	m	struct:m_sem_t	file:
+view_seat	seats.c	/^void view_seat(char* buf, int bufsize,  int seat_id, int customer_id, int customer_priority)$/;"	f
+writenbytes	util.c	/^int writenbytes(int fd,char *str,int size)$/;"	f
